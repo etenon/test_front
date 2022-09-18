@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title>Test Frontend</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="./js/star-rating/css/star-rating-svg.css">
+        <link rel="stylesheet" type="text/css" href="./css/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="./js/custom-select/itc-custom-select.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+        <script src="./js/star-rating/jquery.star-rating-svg.js"></script>
+        <script defer src="./js/custom-select/itc-custom-select.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="logo">
+                        <img src="./img/logo.png" alt="logo">
+                    </div>
+
+                    <nav class="main-menu">
+                        <ul class="header__menu">
+                            <li>
+                                <a class="dropdown-menu--js active" href="#">Пункт 1 <i class="fa fa-chevron-down chevron--js"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Пункт 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Пункт 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Пункт 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Пункт 5</a>
+                            </li>
+                        </ul>
+
+                        <div class="main-menu__dropdown" style="display: none;">
+                            <div class="dropdown__menu">
+                                <div class="container">
+                                    <div class="menu__item">
+                                        <img src="./img/drop-menu-icon.png" alt="icon">
+                                        <a href="#">
+                                            <span>Меню 1</span>
+                                            <p>Покупайте и продавайте</p>
+                                        </a>
+                                    </div>
+                                    <div class="menu__item">
+                                        <img src="./img/drop-menu-icon.png" alt="icon">
+                                        <a href="#">
+                                            <span>Меню 2</span>
+                                            <p>Покупайте и продавайте</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown__menu">
+                                <div class="container">
+                                    <div class="menu__item">
+                                        <img src="./img/drop-menu-icon.png" alt="icon">
+                                        <a href="#">
+                                            <span>Меню 1</span>
+                                            <p>Покупайте и продавайте</p>
+                                        </a>
+                                    </div>
+                                    <div class="menu__item">
+                                        <img src="./img/drop-menu-icon.png" alt="icon">
+                                        <a href="#">
+                                            <span>Меню 2</span>
+                                            <p>Покупайте и продавайте</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="header__button">
+                        <a href="#">Кнопка</a>
+                    </div>
+                </div>
+
+
+                <div class="header__content">
+                    <div class="container">
+                        <h1>Недвижимость<br />Санкт-Петербурга<br />и Москвы</h1>
+
+                        <form action="" class="header__form">
+                            <div class="form__fields">
+                                <div class="form__select">
+                                    <label for="city">Выбрать город</label>
+                                    <div id="city_select"></div>
+                                </div>
+
+                                <div class="form__input">
+                                    <label for="email">Ваш e-mail</label>
+                                    <input type="text" name="email" id="email" placeholder="info@mail.ru">
+                                </div>
+                            </div>
+    
+                            <button class="form__btn" type="submit">Кнопка действия</button>
+
+                            <div class="form__checkbox">
+                                <label for="check" class="container">
+                                    <input type="checkbox" name="" id="check">
+                                    <span class="checkmark"></span>
+
+                                    Отправляя нам данную форму вы соглашаетесь с<br /><a href="#">политикой конфиденциальности</a>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <img src="./img/header_bg.png" alt="img">
+                </div>
+            </header>
+
+
+            <div class="content">
+                <div class="container">
+                    <h2>
+                        Обычный слайдер
+                    </h2>
+                    <div class="slider__block">
+                        <div class="slider__prevArrow prevArrow--js">
+                            <i class="fa fa-chevron-left"></i>
+                        </div>
+
+                        <div class="content__slider content__slider--js">
+                            <div class="slide__item">
+                                <img src="./img/slide1.png" alt="slide1">
+                                <div class="slide__rating" data-rating="1"></div>
+                            </div>
+                            <div class="slide__item">
+                                <img src="./img/slide2.png" alt="slide2">
+                                <div class="slide__rating" data-rating="2.5"></div>
+                            </div>
+                            <!-- <div class="slide__item">
+                                <img src="./img/slide3.png" height="342" alt="slide3">
+                                <div class="slide__rating" data-rating="4"></div>
+                            </div> -->
+    
+                            <div class="slide__item">
+                                <img src="./img/slide1.png" alt="slide1">
+                                <div class="slide__rating" data-rating="5"></div>
+                            </div>
+                            <div class="slide__item">
+                                <img src="./img/slide2.png"  alt="slide2">
+                                <div class="slide__rating" data-rating="3"></div>
+                            </div>
+                            <!-- <div class="slide__item">
+                                <img src="./img/slide3.png" alt="slide3">
+                                <div class="slide__rating" data-rating="5"></div>
+                            </div> -->
+                        </div>
+
+                        <div class="slider__nextArrow nextArrow--js">
+                            <i class="fa fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="content__text">
+                        <div class="container">
+                            <div class="progress__bar">
+                                <div class="progress-bar__inner">
+                                    <div class="progress-bar">5 %</div>
+                                </div>
+
+                                <a href="#" class="progress-bar__btn--js">+ 25%</a>
+                            </div>
+
+                            <div class="text">
+                                <p>Большинство онкологических пациентов испытывают страх перед неизвестностью того, что их ожидает в процессе лечения рака. </p>
+                                <a href="#">Подробнее <i class="fa fa-chevron-down"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="map" id="map"></div>
+
+
+                    <div class="content__blocks">
+                        <div class="container">
+                            <div class="blocks__item">
+                                <div class="head">3,000</div>
+                                <div class="text">Агенств</div>
+                            </div>
+                            <div class="blocks__item">
+                                <div class="head">10,000</div>
+                                <div class="text">Партнеров</div>
+                            </div>
+                            <div class="blocks__item">
+                                <div class="head">80,000</div>
+                                <div class="text">Квартир в базе</div>
+                            </div>
+                            <div class="blocks__item">
+                                <div class="head">100+</div>
+                                <div class="text">Застройщиков</div>
+                            </div>
+                            <div class="blocks__item">
+                                <div class="head">200</div>
+                                <div class="text">Сотрудников</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="backtotop backtotop--js" href="#"><span>Наверх</span><i class="fa fa-chevron-circle-up"></i></a>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="address">
+                        Санкт-Петербург, Владимирский пр., д. 3лит. А, офис 701
+                    </div>
+                    <div class="phone">
+                        + 7 (812) 445-68-09
+                    </div>
+                    <div class="contact">
+                        <span>
+                            <a href="#">Напишите нам</a>
+                        </span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="./js/index.js"></script>
+    </body>
+</html>
